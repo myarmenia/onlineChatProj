@@ -1,0 +1,33 @@
+.memberItem_main{
+    width: 100%;
+    border-radius: 31.5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.memberItem_main .member{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.memberItem_main .member .member_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--lightBlue); */
+    color: white;
+}
+.memberItem_main .member .member_name{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;      
+}
+.memberItem_main .controllers{
+    display: flex;
+    gap: 10px;
+}

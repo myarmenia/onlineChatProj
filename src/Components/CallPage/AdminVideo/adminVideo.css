@@ -1,0 +1,192 @@
+.adminVideo_main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    border-radius: 20px;
+}
+.adminVideo_main .adminVideo_div{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(168, 168, 168);
+    position: relative;
+    border-radius: 20px;
+}
+.adminVideo_main .mute{
+    padding: 12px 20px ;
+    gap: 10px;
+    border-radius: 61px;
+    background: #DFEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.adminVideo_main .mute_active{
+    background: #EB5757;
+    padding: 12px 20px ;
+    gap: 10px;
+    border-radius: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.adminVideo_main .mute_active p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+
+}
+.adminVideo_main .mute:hover{
+    background: #bbc8df;
+}
+.adminVideo_main .mute p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0060FF;
+
+}
+
+.adminVideo_main .adminVideo_div .controllers{
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    display: flex;
+    gap: 55px;
+}
+.adminVideo_main .adminVideo_div .controllers .icons{
+    display: flex;
+    gap: 10px;
+}
+.adminVideo_main .adminVideo_div .controllers .icons div:hover{
+    cursor: pointer;
+}
+.adminVideo_main .adminVideo_div .controllers .end{
+    padding: 0px 45px;
+    border-radius: 73px ;
+    background: #EB5757;
+    font-family: InterLight;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.adminVideo_main .adminVideo_div .controllers .end:hover{
+    background: #FD3737;
+
+}
+.adminVideo_main .adminVideo_div .controllers .icons .share{
+    position: relative;
+}
+.adminVideo_main .adminVideo_div .controllers .icons .share_div{
+    position: absolute;
+    bottom: -280px;
+    background-color: rgb(238, 238, 238);
+    width: 370px;
+    right: -300%;
+    z-index: 10;
+}
+.adminVideo_main .adminVideo_div .controllers .icons .share_div .buttons{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    gap: 10px;
+}
+.adminVideo_main .adminVideo_div .controllers .icons .share_div .buttons .disabled{
+    font-family: InterLight;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+    padding: 15px 20px ;
+    align-items: center;
+}
+.adminVideo_main .adminVideo_div .controllers .icons .share_div .buttons .permission i{
+    transform: rotateY(180deg);
+}
+.adminVideo_main .adminVideo_div .controllers .icons .share_div .buttons .active{
+    padding: 15px 20px ;
+    gap: 10px;
+    border-radius: 61px;
+    background: #DFEBFF;
+    font-family: InterLight;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #0060FF;
+
+}
+.adminVideo_main .adminVideo_div .controllers .icons .share_div .members_list ul{
+    max-height: 180px;
+    margin: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    cursor: auto;
+}
+
+.share_div .members_list .memberItem_main{
+    border-radius: 31.5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px 5px 5px;
+    align-items: center;
+}
+.share_div .members_list .memberItem_main .member{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.share_div .members_list .memberItem_main .member .member_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightBlue);
+    color: white;
+}
+.share_div .members_list .memberItem_main .member .member_name{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;      
+}
+.share_div .members_list .memberItem_main .controllers{
+    display: flex;
+    gap: 10px;
+}
+
+.share_div .members_list ::-webkit-scrollbar {
+    background: #DFEBFF;
+    border-radius: 10px;
+    width: 5px;
+  }
+
+  .share_div .members_list::-webkit-scrollbar-track {
+    border-radius: 50px;
+    height: 5px;
+  }
+  
+
+  .share_div .members_list ::-webkit-scrollbar-thumb {
+    background: #0060FF;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 3px;
+  }

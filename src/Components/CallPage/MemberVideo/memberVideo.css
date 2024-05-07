@@ -1,0 +1,38 @@
+.memberVideo_main{
+    width: 30%;
+    border-radius: 20px;
+    position: relative;
+}
+.memberVideo_main .member_video_div{
+    width: 100%;
+    height: 180px;
+    background-color: gray;
+    border-radius: 20px;
+}
+.memberVideo_main .controllers{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+.memberVideo_main .controllers svg{
+    cursor: pointer;
+}
+.memberVideo_main .controllers .name{
+    padding: 0px 8px;
+    gap: 10px;
+    border-radius: 15px ;
+    font-family: Inter;
+    font-size: 8px;
+    font-weight: 400;
+    background: #2419214D;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.memberVideo_main .controllers  .microphone{
+    border-radius: 50%;
+}

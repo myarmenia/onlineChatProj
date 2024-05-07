@@ -1,0 +1,214 @@
+.callHead_div{
+    background-color:  #FFFFFF;
+    width: 100%;
+    margin: 0 auto;
+}
+.callHead_cont{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+.callHead_cont .img_div{
+    width: 5%;
+    height: 100%;
+}
+.callHead_cont .img_div img{
+    width: 100%;
+    height: 100%;
+}
+.callHead_cont .date h5{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+}
+.callHead_cont .date{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.callHead_cont .date p{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    color: #ACACAC;
+}
+.callHead_cont .contacts{
+    width: 20%;
+    overflow-y: hidden;
+    min-height: 70px;
+    display: flex;
+    gap: 10px;
+    padding: 7px;
+    transition: all .5s linear; 
+    position: relative;  
+}
+.callHead_cont .contacts .userItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all .5s linear; 
+}
+.callHead_cont .contacts .userItem .user_img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--lightBlue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.callHead_cont .contacts .sliceUserItem{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--lightBlue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    position: absolute;
+    border: 2px solid white;
+    transition: all .5s linear; 
+}
+.callHead_cont .contacts .sliceUserItem:nth-child(1){
+    right: 120px;
+}
+.callHead_cont .contacts .sliceUserItem:nth-child(2){
+    right: 90px;
+}
+.callHead_cont .contacts .sliceUserItem:nth-child(3){
+    right: 60px;
+}
+.callHead_cont .contacts .sliceUserItem:nth-child(4){
+    right: 30px;
+}
+.callHead_cont .contacts .more{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgba(169, 169, 169, 0.514);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    position: absolute;
+    z-index: 6;
+    right: 0;
+    cursor: pointer;
+}
+.callHead_cont .contacts .more_i{
+    width: 50px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgb(184, 177, 177);
+    color: rgb(184, 177, 177);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+.callHead_cont .contacts .userItem>p{
+    font-size: 8px;
+    text-align: center;
+}
+.callHead_cont .link{
+    display: flex;
+    gap: 10px;
+    background-color: #DFEBFF;
+    color:  #0060FF    ;
+    padding: 15px 20px;
+    border-radius: 115.4px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.callHead_cont .link svg{
+    cursor: pointer;
+}
+.callHead_cont .user{
+    background: #F6F6F6;
+    width: 174px;
+    height: 63px;
+    left: 1042px;
+    padding: 4px 16px ;
+    border-radius: 83px;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+.callHead_cont .user .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--darkBlue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.callHead_cont .user p{
+    font-family: Inter;
+    font-size: 12px;
+}
+
+
+
+.callHead_cont ::-webkit-scrollbar {
+    background: #DFEBFF;
+    height: 5px;
+    border-radius: 10px;
+
+  }
+
+.callHead_cont ::-webkit-scrollbar-track {
+    border-radius: 50px;
+  }
+  
+
+.callHead_cont ::-webkit-scrollbar-thumb {
+    background: #0060FF;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+@media (max-width:940px) {
+    .callHead_cont{
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .callHead_cont .date{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        width: 20%;
+    }
+    .callHead_cont .date h5{
+        font-size: 14px;
+    }
+    .callHead_cont .date p{
+        font-size: 10px;
+    }
+    .callHead_cont .contacts{
+        width: 25%;
+    }
+    .callHead_cont .link{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .callHead_cont .link svg{
+        width: 20px;
+        height: 20px;
+    }
+}

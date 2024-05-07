@@ -1,0 +1,9 @@
+.title_main{
+    width: 100%;
+}
+.title{
+    font-family: IBMP;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
