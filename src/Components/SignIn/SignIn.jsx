@@ -3,6 +3,15 @@ import './signIn.css'
 import img from '../../Images/8-01 1.png'
 
 const SignIn = () => {
+
+  const goToGoogle = ()=>{
+    window.location.href = 'http://localhost:4000/api/auth/google'
+  }
+
+  const goToFacebook = ()=>{
+    window.location.href = "http://localhost:4000/api/auth/facebook"
+  }
+
   return (
     <div className='signIn_main'>
         <div className="signIn_content">
@@ -11,8 +20,8 @@ const SignIn = () => {
             <h3>Sign in</h3>
             <h4>Welcome</h4>
             <p>Sign to your account</p>
-            <div className="sign_with">Sign In With Google</div>
-            <div className="sign_with">Sign In With Facebook</div>
+            <div className="sign_with" onClick={goToGoogle}>Sign In With Google</div>
+            <div className="sign_with" onClick={goToFacebook}>Sign In With Facebook</div>
             </div>
         </div>
     </div>
