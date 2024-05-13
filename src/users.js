@@ -39,4 +39,8 @@ export const users = [
     id: 10,
     name: "Miriam Snyder",
   },
+  {
+    id: 11,
+    name: "Shla Lalala",
+  },
 ];
