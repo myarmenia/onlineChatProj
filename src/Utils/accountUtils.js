@@ -1,4 +1,4 @@
-export const ACCESS_TOKEN = "accesToken"
+export const ACCESS_TOKEN = "accesToken";
 
 export function signOut() {
   removeAuthToken();
@@ -6,9 +6,12 @@ export function signOut() {
 }
 
 export function getAccessToken() {
-  return localStorage.getItem(ACCESS_TOKEN) || sessionStorage.getItem(ACCESS_TOKEN) || "";
+  return (
+    localStorage.getItem(ACCESS_TOKEN) ||
+    sessionStorage.getItem(ACCESS_TOKEN) ||
+    ""
+  );
 }
-
 
 export function setAuthToken(accessToken, remember) {
   if (remember) {

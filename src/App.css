@@ -1,37 +1,36 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Inter;
 }
-:root{
-  --lightBlue : #73BCFF;
-  --darkBlue:#2E9DFB;
-  --mainRed : #FA6464;
-  --mainYellow : #FFD955;
-  --mainGreen:  #37D15D ;
-
+:root {
+  --lightBlue: #73bcff;
+  --darkBlue: #2e9dfb;
+  --mainRed: #fa6464;
+  --mainYellow: #ffd955;
+  --mainGreen: #37d15d;
 }
 @font-face {
   font-family: "Inter";
-  src: url('./Fonts/Inter-Medium.ttf');
+  src: url("./Fonts/Inter-Medium.ttf");
 }
 @font-face {
   font-family: "InterLight";
-  src: url('./Fonts/Inter-Light.ttf');
+  src: url("./Fonts/Inter-Light.ttf");
 }
 @font-face {
   font-family: "IBMP";
-  src: url('./Fonts/IBMPlexSansHebrew-Medium.ttf');
+  src: url("./Fonts/IBMPlexSansHebrew-Medium.ttf");
 }
 .App {
   /* max-width: 1440px; */
   margin: 0 auto;
 }
-.container{
+.container {
   max-width: 1200px;
   padding: 20px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 ul {
   list-style-type: none;

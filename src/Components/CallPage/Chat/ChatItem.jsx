@@ -1,10 +1,8 @@
-import React from 'react'
-import './chat.css'
+import React from "react";
+import "./chat.css";
 
 const ChatItem = () => {
-  return (
-    <div>ChatItem</div>
-  )
-}
+  return <div>ChatItem</div>;
+};
 
-export default ChatItem
+export default ChatItem;

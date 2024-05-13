@@ -5,17 +5,11 @@ const requireAuth = (WrappedComponent) => {
   return (props) => {
     const token = getAccessToken();
 
-      if (!token) {
-        window.location.href ="/user/signin"
-
-      }else{
-        return <WrappedComponent {...props} />;
-      }
-
-      
-
-
-
+    if (!token) {
+      window.location.href = "/user/signin";
+    } else {
+      return <WrappedComponent {...props} />;
+    }
   };
 };
 

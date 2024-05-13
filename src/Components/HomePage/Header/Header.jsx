@@ -62,73 +62,73 @@ const Header = () => {
           <div className="links">
             <NavLink to={"/signIn"}>New meeting</NavLink>
             <div className="link" ref={linkRef}>
+              {text.length ? (
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 36 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.0645 25.4601H24.25C28.621 25.4601 32.2105 21.8851 32.2105 17.4996C32.2105 13.1285 28.6355 9.53906 24.25 9.53906H22.0645"
+                    stroke="#0060FF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M13.3943 9.53906H11.2232C6.8377 9.53906 3.2627 13.1141 3.2627 17.4996C3.2627 21.8706 6.8377 25.4601 11.2232 25.4601H13.3943"
+                    stroke="#0060FF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M11.9473 17.499H23.5262"
+                    stroke="#0060FF"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 35 35"
+                  color="black"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ pointerEvents: "none" }}
+                >
+                  <path
+                    d="M22.0645 25.4611H24.25C28.621 25.4611 32.2105 21.8861 32.2105 17.5006C32.2105 13.1295 28.6355 9.54004 24.25 9.54004H22.0645"
+                    stroke="#0060FF"
+                    strokeOpacity="0.6"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M13.3943 9.54004H11.2232C6.8377 9.54004 3.2627 13.115 3.2627 17.5006C3.2627 21.8716 6.8377 25.4611 11.2232 25.4611H13.3943"
+                    stroke="#0060FF"
+                    strokeOpacity="0.6"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M11.9473 17.5H23.5262"
+                    stroke="#0060FF"
+                    strokeOpacity="0.6"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              )}
 
-              {
-                text.length ?  <svg
-                width="30"
-                height="30"
-                viewBox="0 0 36 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.0645 25.4601H24.25C28.621 25.4601 32.2105 21.8851 32.2105 17.4996C32.2105 13.1285 28.6355 9.53906 24.25 9.53906H22.0645"
-                  stroke="#0060FF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M13.3943 9.53906H11.2232C6.8377 9.53906 3.2627 13.1141 3.2627 17.4996C3.2627 21.8706 6.8377 25.4601 11.2232 25.4601H13.3943"
-                  stroke="#0060FF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M11.9473 17.499H23.5262"
-                  stroke="#0060FF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>  :    <svg
-                width="30"
-                height="30"
-                viewBox="0 0 35 35"
-                color="black"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                style={{pointerEvents: "none"}}
-              >
-                <path
-                  d="M22.0645 25.4611H24.25C28.621 25.4611 32.2105 21.8861 32.2105 17.5006C32.2105 13.1295 28.6355 9.54004 24.25 9.54004H22.0645"
-                  stroke="#0060FF"
-                  strokeOpacity="0.6"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M13.3943 9.54004H11.2232C6.8377 9.54004 3.2627 13.115 3.2627 17.5006C3.2627 21.8716 6.8377 25.4611 11.2232 25.4611H13.3943"
-                  stroke="#0060FF"
-                  strokeOpacity="0.6"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M11.9473 17.5H23.5262"
-                  stroke="#0060FF"
-                  strokeOpacity="0.6"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              }
-
-           
               <input
                 type="text"
                 placeholder="enter the link "
