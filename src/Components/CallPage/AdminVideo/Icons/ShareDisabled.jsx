@@ -1,8 +1,8 @@
 import React from "react";
 
-const ShareDisabled = ({ setshareIsActive, shareIsActive }) => {
+const ShareDisabled = ({setshareIsActive,shareIsActive}) => {
   return (
-    <div onClick={() => setshareIsActive(!shareIsActive)}>
+    <div  onClick={() => setshareIsActive(!shareIsActive)}>
       <svg
         width="60"
         height="60"

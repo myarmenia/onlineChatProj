@@ -48,7 +48,7 @@ const MicrophoneDisabled = () => {
             filterUnits="userSpaceOnUse"
             colorInterpolationFilters="sRGB"
           >
-            <feFlood result="BackgroundImageFix" />
+            <feFlood  result="BackgroundImageFix" />
             <feGaussianBlur in="BackgroundImageFix" stdDeviation="5.25" />
             <feComposite
               in2="SourceAlpha"

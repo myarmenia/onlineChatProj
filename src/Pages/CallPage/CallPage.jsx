@@ -10,11 +10,12 @@ import MemberItem from "../../Components/CallPage/MemberItem/MemberItem";
 const CallPage = () => {
   const location = useLocation();
   const [muteEveryoneIsActive, setMuteEveryoneIsActive] = useState(true);
-  const elRef = useRef(null);
+  const elRef = useRef(null)
 
   location.pathname === "/callpage"
     ? (document.body.style.backgroundColor = "rgb(238, 238, 238)")
     : (document.body.style.backgroundColor = "white");
+
 
   return (
     <div className="callPage_div">
@@ -184,13 +185,11 @@ const CallPage = () => {
               </button>
             </div>
             <div className="all_friends_list">
-              <ul ref={elRef} id="elem">
-                {users.map((u) => (
-                  <li key={u.id}>
-                    <MemberItem user={u} />
-                  </li>
-                ))}
-              </ul>
+                <ul ref={elRef} id="elem">
+                    {
+                        users.map((u)=><li key={u.id} ><MemberItem user={u}/></li>)
+                    }
+                </ul>
             </div>
           </div>
         </div>
