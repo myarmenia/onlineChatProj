@@ -62,7 +62,7 @@ const Header = () => {
             </div>
           </div>
           <div className="links">
-            <NavLink to={"/signIn"}>New meeting</NavLink>
+            <NavLink to={"/callPage"}>New meeting</NavLink>
             <div className="link" ref={linkRef}>
 
               {

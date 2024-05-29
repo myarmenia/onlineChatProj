@@ -27,4 +27,4 @@ const MemberItem = ({user}) => {
   )
 }
 
-export default MemberItem
+export default React.memo(MemberItem)

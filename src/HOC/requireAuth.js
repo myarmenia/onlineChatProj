@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import { getAccessToken } from "../Utils/accountUtils";
+import {get_user_cookies } from "../Utils/accountUtils";
 
 const requireAuth = (WrappedComponent) => {
   return (props) => {
-    const token = getAccessToken();
-
-      if (!token) {
-        window.location.href ="/user/signin"
+      if (!get_user_cookies.name) {
+        window.location.href ="/signin"
 
       }else{
         return <WrappedComponent {...props} />;

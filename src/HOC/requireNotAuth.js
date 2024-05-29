@@ -1,12 +1,10 @@
 import React from "react";
-import { getAccessToken } from "../Utils/accountUtils";
+import { getAccessToken, get_user_cookies } from "../Utils/accountUtils";
 
 const requireNotAuth = (WrappedComponent) => {
   return (props) => {
-    const token = getAccessToken();
-
-      if (token) {
-       window.location.href = "/user/account"
+      if (get_user_cookies.name) {
+       window.location.href = "/callPage"
 
       }else{
         return <WrappedComponent {...props} />;

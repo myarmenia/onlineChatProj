@@ -5,11 +5,12 @@ import img from '../../Images/8-01 1.png'
 const SignIn = () => {
 
   const goToGoogle = ()=>{
-    window.location.href = 'http://localhost:4000/api/auth/google'
+    window.location.href = 'http://localhost:4001/auth/google'
   }
+  
 
   const goToFacebook = ()=>{
-    window.location.href = "http://localhost:4000/api/auth/facebook"
+    window.location.href = "http://localhost:4001/auth/facebook"
   }
 
   return (

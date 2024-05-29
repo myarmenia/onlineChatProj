@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import { users } from "../../users";
 import MemberVideo from "../../Components/CallPage/MemberVideo/MemberVideo";
 import MemberItem from "../../Components/CallPage/MemberItem/MemberItem";
+import requireAuth from "../../HOC/requireAuth";
 
 const CallPage = () => {
   const location = useLocation();
@@ -198,4 +199,4 @@ const CallPage = () => {
   );
 };
 
-export default CallPage;
+export default requireAuth(CallPage);

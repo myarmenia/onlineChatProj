@@ -2,13 +2,19 @@ import React, { useState } from 'react'
 import './callHead.css'
 import logo from '../../../Images/Mask group.png'
 import { users } from '../../../users'
+import { get_user_cookies } from '../../../Utils/accountUtils'
 
 const month = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+
+const signOutFunc = ()=>{
+  window.location = "http://localhost:4001/logout"
+}
 
 const CallHead = () => {
     const [isOpen, setIsOpen] = useState(false)
     const date =  new Date()
     const sliceUsers = users.slice(0,4)
+    console.log("call-----",get_user_cookies.name);
 
   return (
     <div className='callHead_div'>
@@ -75,10 +81,14 @@ const CallHead = () => {
               <p>Cem-jnmt-hsu</p>
             </div>
 
-            <div className="user">
-                <div className="img">E</div>
-                <p>User Name</p>
-            </div>
+            <div className='user_main'> <div className="user_div">
+
+                <div className="img">{get_user_cookies.name.charAt(0).toUpperCase()}</div>
+                <p>{get_user_cookies.name}</p>
+      
+              </div> 
+              <div className="signOut" onClick={signOutFunc}>Sign Out</div>
+              </div>
         </div>
     </div>
   )

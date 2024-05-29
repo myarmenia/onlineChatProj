@@ -1,10 +1,9 @@
 import React from 'react'
 import './title.css'
-import { useParams } from 'react-router-dom'
+import { get_user_cookies } from '../../../Utils/accountUtils'
+
 
 const Title = () => {
-  const {username} = useParams()
-  const randomColor =`#${Math.floor(Math.random()*16777215).toString(16)}`;
   function getRandomColor() {
     let r, g, b;
   
@@ -17,7 +16,7 @@ const Title = () => {
   }
 
   const signOutFunc = ()=>{
-    window.location = "/"
+    window.location = "http://localhost:4001/logout"
   }
 
   return (
@@ -26,10 +25,10 @@ const Title = () => {
           <div className="title">MEETING</div>
             
           {
-            username ? <div className='user_main'> <div className="user_div">
+            get_user_cookies.name ? <div className='user_main'> <div className="user_div">
 
-                <div className="img" style={{background: getRandomColor()}}>{username.charAt(0).toUpperCase()}</div>
-                <p>{username}</p>
+                <div className="img" style={{background: getRandomColor()}}>{get_user_cookies.name.charAt(0).toUpperCase()}</div>
+                <p>{get_user_cookies.name}</p>
       
               </div> 
               <div className="signOut" onClick={signOutFunc}>Sign Out</div>
