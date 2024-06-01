@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./adminVideo.css";
 import MicrophoneActive from "./Icons/MicrophoneActive";
 import MicrophoneDisabled from "./Icons/MicrophoneDisabled";
@@ -7,12 +7,16 @@ import Videodisabled from "./Icons/Videodisabled";
 import ShareActive from "./Icons/ShareActive";
 import ShareDisabled from "./Icons/ShareDisabled";
 import { users } from "../../../users";
+import { io } from "socket.io-client";
+import VideoChat from "./Video";
 
 const AdminVideo = () => {
   const [micrIsActive, setMicrIsActive] = useState(true);
   const [videoIsActive, setVideoIsActive] = useState(true);
   const [shareIsActive, setshareIsActive] = useState(false);
   const [share, setShare] = useState("")
+  const [isVideoEnabled, setIsVideoEnabled] = useState(true);
+  const myStreamRef = useRef();
 
   const setShareSetting = (setting)=>{
     if(share === setting){
@@ -25,7 +29,9 @@ const AdminVideo = () => {
   return (
     <div className="adminVideo_main">
       <div className="adminVideo_div">
-        <div className="video_div"></div>
+        <div className="video_div">
+            <VideoChat/>
+        </div>
         <div className="controllers">
           <div className="icons">
             <div

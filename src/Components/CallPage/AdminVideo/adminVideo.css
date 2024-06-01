@@ -8,7 +8,7 @@
 }
 .adminVideo_main .adminVideo_div{
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-color: rgb(168, 168, 168);
     position: relative;
     border-radius: 20px;
@@ -50,7 +50,10 @@
     color: #0060FF;
 
 }
-
+.adminVideo_main .adminVideo_div  .video_div{
+    width: 100%;
+    height: 555px;
+}
 .adminVideo_main .adminVideo_div .controllers{
     position: absolute;
     bottom: 20px;
@@ -189,4 +192,13 @@
     border-radius: 10px;
     cursor: pointer;
     height: 3px;
+  }
+  #video-grid {
+    width: 100%;
+    height: 100%;
+  }
+  #video-grid video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
   }
